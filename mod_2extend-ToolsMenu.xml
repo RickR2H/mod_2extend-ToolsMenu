@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="administrator"
+    method="upgrade">
+	<name>2Extend - Tools menu</name>
+	<author>R2H Marketing &amp; Internet Solutions</author>
+	<creationDate>20 April 2014</creationDate>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>rick@r2h.nl</authorEmail>
+	<authorUrl>www.r2h.nl</authorUrl>
+	<version>1.0.1</version>
+	<description>Plaat deze module in de positie: Menu van de Isis Administrator template</description>
+	<files>
+		<filename module="mod_2extend-ToolsMenu">mod_2extend-ToolsMenu.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="dummytext1" 
+                    label ="Lorum ipsum tekst" 
+                    type="editor" 
+                    width="300"
+                    height="300"
+                    default="&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin magna metus, tempus eget vestibulum a, semper ut nisl. Pellentesque volutpat mauris sed ligula dictum sagittis. Maecenas massa lacus, elementum in mattis in, tincidunt ut arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam at tellus lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas elementum augue ac interdum. Nulla facilisi. Nullam sagittis dui non tempor sodales. Sed sem urna, vehicula nec accumsan at, dapibus eget odio. Nullam posuere placerat magna, id mattis nisi ultricies quis. Sed et orci a purus gravida viverra. Ut tincidunt rutrum pellentesque. Nullam blandit commodo orci, eget condimentum ante consectetur eu. Ut in ultricies neque. Donec dignissim nulla sit amet urna faucibus consequat.&lt;/p&gt;"
+                    filter="safehtml" />
+                <field name="dummytext2" 
+                    label ="Custom tekst" 
+                    type="editor" 
+                    width="300"
+                    height="300"
+                    default="&lt;p&gt;&lt;img style=&quot;margin-right: 10px; float: left;&quot; src=&quot;http://dummyimage.com/250x250/b5b5b5/ffffff.jpg&quot; alt=&quot;&quot; /&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin magna metus, tempus eget vestibulum a, semper ut nisl. Pellentesque volutpat mauris sed ligula dictum sagittis. Maecenas massa lacus, elementum in mattis in, tincidunt ut arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam at tellus lacus.&lt;/p&gt;"
+                    filter="safehtml" />
+                <field
+					name="CustomButton1"
+					type="text"
+					default=""
+					label="Custom Button 1"
+					description="Custom Button 1" />
+                <field
+					name="CustomButton1URL"
+					type="text"
+					default=""
+					label="Custom Button 1 URL"
+					description="Custom Button 1" />
+                <field name="target1" type="radio" default="_blank" label="Selecteer target URL 1" description="">
+                    <option value="_blank">_blank</option>
+                    <option value="_self">_self</option>
+                </field>
+                <field
+					name="CustomButton2"
+					type="text"
+					default=""
+					label="Custom Button 2"
+					description="Custom Button 2 URL" />
+                <field
+					name="CustomButton2URL"
+					type="text"
+					default=""
+					label="Custom Button 2 URL"
+					description="Custom Button 2 URL" />
+                <field name="target2" type="radio" default="_blank" label="Selecteer target URL 2" description="">
+                    <option value="_blank">_blank</option>
+                    <option value="_self">_self</option>
+                </field>
+            </fieldset>
+		</fields>
+	</config>
+</extension>
