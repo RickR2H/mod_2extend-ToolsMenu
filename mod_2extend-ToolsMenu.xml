@@ -12,7 +12,7 @@
 	<authorEmail>rick@r2h.nl</authorEmail>
 	<authorUrl>www.r2h.nl</authorUrl>
 	<version>1.0.1</version>
-	<description>Plaat deze module in de positie: Menu van de Isis Administrator template</description>
+	<description>Plaat deze module in de positie: <b>Menu</b> van de Isis Administrator template</description>
 	<files>
 		<filename module="mod_2extend-ToolsMenu">mod_2extend-ToolsMenu.php</filename>
 		<filename>index.html</filename>
